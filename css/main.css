@@ -79,7 +79,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  border-bottom: 4px solid yellow;
+  border-bottom: 4px solid #ffd700;
+  color: #c0c0c0;
 }
 
 .slider {
@@ -89,6 +90,149 @@ nav ul li a:hover {
 .slider img {
   width: 100%;
   height: auto;
+  margin-bottom: 0;
+  border-bottom: 2px solid #ffd700;
+}
+.slider ul {
+  list-style-type: none;
+  border-top: 2px solid green;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #00008b;
+}
+.slider ul li {
+  display: inline-block;
+  border-left: 2px solid #ff7f50;
+  padding: 8px;
+}
+.slider ul li a {
+  text-decoration: none;
+  color: #c0c0c0;
+}
+.feed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 4px;
+  padding: 8px;
+}
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 25%;
+  overflow: scroll;
+}
+.news .title {
+  display: inline;
+  color: #ffd700;
+  align-items: center;
+  text-align: center;
+}
+.news img {
+  width: auto;
+  height: 200px;
+}
+.news .title a {
+  text-decoration: none;
+  color: #00008b;
+  border: 1px solid #00008b;
+  padding: 8px 16px;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.news ul {
+  list-style-type: none;
+}
+.news ul li {
+  border-bottom: 4px solid #f4f4f4;
+  padding: 4px;
+}
+.event-content {
+  margin: 16px 0px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* Duara la tarehe */
+.circle-date {
+  min-width: 100px; /* Rekebisha upana wa duara */
+  min-height: 100px; /* Rekebisha urefu wa duara */
+  /* Rangi ya nyuma ya duara (dark blue) */
+  border-radius: 50%; /* Inafanya div iwe duara */
+  background-color: #00008b;
+  display: flex;
+  flex-direction: column; /* Pangilia vipengele juu na chini */
+  justify-content: space-evenly; /* Weka maandishi ya juu na chini */
+  align-items: center;
+  padding: 8px 0;
+  color: white; /* Rangi ya maandishi kwa ujumla */
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Maandishi ya WED (upande wa juu wa duara) */
+.top-text {
+  color: #c0c0c0; /* Rangi tofauti kwa WED (orange) */
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Maandishi ya SEP 11 (upande wa chini wa duara) */
+.bottom-text {
+  color: #ffd700; /* Rangi tofauti kwa SEP 11 (light green) */
+  font-size: 24px;
+  margin: 0;
+}
+.event-title {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 8px;
+}
+.event-title a {
+  text-decoration: none;
+  font-size: 16px;
+}
+.announcement p {
+  padding: 16px;
+  line-height: 16px;
+  border-bottom: 2px solid #f4f4f4;
+}
+.announcement p a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.announcement p a:hover {
+  font-weight: 900;
+  text-decoration: dotted;
+  color: #000000;
+}
+.quick-link ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 16px !important;
+  margin: 0;
+}
+.quick-link ul li {
+  display: block;
+  border: none !important;
+  padding: 8px;
+  background-color: #ff7f50;
+  margin-bottom: 8px;
+}
+.quick-link ul li a {
+  border: none !important;
+  color: #f5f5f5 !important;
+  font-size: 24px !important;
+}
+.quick-link ul li a:hover {
+  color: #000000 !important;
+  font-weight: 900;
 }
 .footer-link {
   display: flex;
@@ -97,17 +241,77 @@ nav ul li a:hover {
   align-items: flex-start;
   padding: 4px 16px;
   background-color: #00008b;
-  border-bottom: 1px solid yellow;
   opacity: 100px;
 }
 
 .footer-link-item {
-  color: white;
+  color: #d3d3d3;
 }
+.footer-link-item h5 {
+  color: #c0c0c0;
+  font-size: 20px;
+  margin: 8px 0;
+}
+.footer-link-item ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2rem;
+}
+.footer-link-item ul li {
+  display: flex;
+}
+.footer-link-item ul li a {
+  text-decoration: none;
+  color: #c0c0c0;
+}
+.footer-link-item ul li a:hover {
+  color: #ffd700;
+  font-weight: bolder;
+}
+
 .copyright {
+  border-top: 1px solid #03032f;
   display: flex;
   align-items: center;
   color: white;
   justify-content: center;
-  background-color: rgba(0, 0, 102, 0.8);
+  background-color: #00008b;
+}
+.copyright a {
+  text-decoration: none;
+  color: #ffd700;
+  opacity: 10;
+}
+
+/* media query */
+@media (max-width: 768px) {
+  .feed {
+    flex-direction: column; /* Badilisha kuwa wima */
+    align-items: center; /* Center vipengele kwa wima */
+  }
+  .news {
+    overflow: none;
+    width: 100%;
+  }
+  .footer-link {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0px;
+  }
+  .footer-link-item {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #c0c0c0;
+  }
+  .footer-link-item a {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-link-item ul li {
+    justify-content: center;
+  }
 }
