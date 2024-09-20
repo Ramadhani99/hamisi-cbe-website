@@ -24,7 +24,7 @@ body {
   justify-content: center;
   color: #00008b;
   font-weight: bolder;
-  font-size: larger;
+  font-size: 1.25rem;
 }
 
 .banner-container div ul {
@@ -71,7 +71,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 900;
   display: inline-block;
   color: white;
@@ -141,7 +141,7 @@ nav ul li a:hover {
   color: #00008b;
   border: 1px solid #00008b;
   padding: 8px 16px;
-  font-size: xx-large;
+  font-size: 1.5rem;
   font-weight: bolder;
 }
 .news ul {
@@ -178,14 +178,14 @@ nav ul li a:hover {
 /* Maandishi ya WED (upande wa juu wa duara) */
 .top-text {
   color: #c0c0c0; /* Rangi tofauti kwa WED (orange) */
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 0;
 }
 
 /* Maandishi ya SEP 11 (upande wa chini wa duara) */
 .bottom-text {
   color: #ffd700; /* Rangi tofauti kwa SEP 11 (light green) */
-  font-size: 24px;
+  font-size: 1.5rem;
   margin: 0;
 }
 .event-title {
@@ -196,11 +196,11 @@ nav ul li a:hover {
 }
 .event-title a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .announcement p {
-  padding: 16px;
-  line-height: 16px;
+  padding: 1rem;
+  line-height: 1rem;
   border-bottom: 2px solid #f4f4f4;
 }
 .announcement p a {
@@ -228,7 +228,7 @@ nav ul li a:hover {
 .quick-link ul li a {
   border: none !important;
   color: #f5f5f5 !important;
-  font-size: 24px !important;
+  font-size: 1.5rem !important;
 }
 .quick-link ul li a:hover {
   color: #000000 !important;
@@ -249,7 +249,7 @@ nav ul li a:hover {
 }
 .footer-link-item h5 {
   color: #c0c0c0;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 8px 0;
 }
 .footer-link-item ul {
@@ -313,5 +313,28 @@ nav ul li a:hover {
   }
   .footer-link-item ul li {
     justify-content: center;
+  }
+  .quick-link ul li a {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul li a {
+    font-size: 1rem !important;
+  }
+  .circle-date {
+    min-width: 50px; /* Rekebisha upana wa duara */
+    min-height: 50px;
+  }
+  .bottom-text,
+  .top-text {
+    font-size: 1rem !important;
+  }
+  .news .title a {
+    font-size: 1rem !important;
+  }
+  .announcement p {
+    font-size: 0.875rem !important;
   }
 }
