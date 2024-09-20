@@ -293,6 +293,7 @@ nav ul li a:hover {
   .news {
     overflow: none;
     width: 100%;
+    margin-bottom: 8px !important;
   }
   .footer-link {
     flex-direction: column;
@@ -336,5 +337,8 @@ nav ul li a:hover {
   }
   .announcement p {
     font-size: 0.875rem !important;
+  }
+  .slider ul li a {
+    font-size: 1rem;
   }
 }
